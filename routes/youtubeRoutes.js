@@ -13,6 +13,7 @@ module.exports = app => {
         }&part=snippet&mine=true`
       );
       res.send(ytRes.data);
+      console.log(ytRes.data);
     } catch (e) {
       console.log(e);
       console.log(e.message);
